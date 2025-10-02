@@ -1,0 +1,82 @@
+Formation dvp web : html, css et JS
+
+Jour 1:
+
+	*Introduction web:
+Relation client serveur (hyper text media language)
+Navigateur = client
+LIS = JS utilisé par un server pour traiter la donnée pour le client
+
+Protocoles HTTP/HTTPS (secure) => échanges navigateur/Server plus difficile avec HTTPS
+
+HTML = str, CSS = style, JS = interactivité
+
+Compilation sous linux ou windows exécutable que sous linux ou windows (celui utilisé pour la compilation) => propre langage utilisé pour communiquer avec le processeur
+Outils pour faire la trad post compilation
+
+	*HTML:
+Langage de balisage (ML)
+Lien hypertext pour faire lien/navigation entre les pages. Permet aussi le téléchargement, emails, ancres internes (scroller dans la page).
+
+
+
+	*CSS:
+Cascade Style Sheet = pour le style de la page
+Sélecteurs avec balises, classes, IDs, pseudo classes
+
+Si on code mal avec HTML/CSS => la balise (=élément) mal codée ne s'affiche juste pas
+Pour JS, ça plante s'il y a un pb
+
+Styles :
+- interne : balise <style>
+- externe : fichier .css
+- inline : attribut style dans le HTML
+
+
+	*Mise en pratique :
+Extensions VScode :
+Live Server pour voir les modifs en temps réel => /!\ Live à la sauvegarde
+Material Icon Theme pour avoir les icones des dossier, type de fichier ...
+SonarQube = pour éviter la dette technique
+
+Dette technique = code/règles pour comprendre le code pour les personnes et la compilation
+
+2 types de balises HTML:
+- auto fermante => pas besoin de mettre un / (mais on peut)
+- pas auto fermante
+
+HTML :
+Pas de tab pour le <head> et <body>
+charset = encodage => balise meta
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> => paramètres pour la mise en page
+Commentaire avec <!-- -->
+<ul> pour faire un regroupement + <li> pour chaque élément de la liste
+<strong> pour mettre en gras (plus gras que <bold>)
+& = caractère d'échappement
+&lt;!DOCTYPE html&gt; pour avoir <!DOCTYPE html>
+<a> pour les liens avec href="https://lien.fr" en attribut 
+<img> pour les images => attention cross origin (notre site web en local n'a pas accès à google)
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> => pour la compatibilité des vieux browsers
+
+Port 5500 ouvert avec GoLive
+
+Quand on fait "inspecter" sur une page web, la console sert au JS
+Les bandes jaunes au dessus et en dessous des titres sont des marges. On peut les configurer dans le style CSS
+
+Boiler plate = sous str qui donne un exemple à compléter
+
+index.html => point d'entrée de toute application
+
+Refactoring => pour traiter automatiquement quand on change le nom d'un dossier (garder les liens ok)
+
+CSS :
+margin pour les marges externes
+padding pour toutes les marges internes
+On déclare les classe avec des . => .important
+!important force un style pour tous les éléments du paragraphe, titre ..
+:hover pour action quand le curseur passe sur l'élément
+<link rel="stylesheet" href="css-externe.css"> pour relier un ficher externe css a un fichier html
+# pour faire ref à un éléménet qui a un identifiant
+Quand on fait CSS externe, on remet tout le style à 0 avant de faire les nouveaux styles (*{})
+rem => dépend de la taille relative du texte
+display : flex => affichage flexible si on est sur téléphone, ordi ...

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntaxe CSS</title>
+    
+    <style>
+        /* Sélecteur balise */
+        h1 {
+            text-align: center;
+            color: rgb(190, 165, 236);
+            margin-top: 0;
+        }
+
+        p {
+            padding: 20px !important;
+        }
+
+        a {
+            text-decoration: none;
+            border: 2px solid orange;
+            background-color: rgba(255, 166, 0, 0.534);
+            color: darkslateblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Pseudo sélecteur */
+        a:hover {
+            color: orange;
+            border: 2px solid darkslateblue;
+            background-color: rgba(71, 61, 139, 0.514);
+        }
+
+        /* Sélecteur de classe */
+        .important {
+            background-color: rgba(36, 241, 173, 0.603);
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        /* Sélecteur ID */
+        #header {
+            background-color: rgb(0, 30, 128);
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="header">Je suis le paragraphe d'entête</p>
+    
+    <h1>Je suis un titre centré</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores necessitatibus minus totam culpa perspiciatis temporibus, cum voluptas quo deserunt voluptate. Laudantium sapiente rem autem minus quo dignissimos, neque ut molestiae.</p>
+
+    <h2 class="important">Je suis un sous-titre important</h2>
+    <p class="important">Je suis un paragraphe important</p>
+
+    <br>
+    <a href="../index.html">Retour à l'accueil</a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/TS.jpg">
+    <link rel="stylesheet" href="formulaire-style.css">
+    <title>Formulaire à valider</title>
+</head>
+<body>
+    <h3>Atelier Formulaire</h3>
+
+    <form>
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom"/>
+            <span class="error" id="error-nom"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="text" name="email" id="email"/>
+            <span class="error" id="error-email"></span>
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Âge :</label>
+            <input type="number" name="age" id="age"/>
+            <span class="error" id="error-age"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="ville">Ville :</label>
+            <select name="ville" id="ville">
+                <option value="">Sélectionner une ville</option>
+                <option value="Paris">Paris</option>
+                <option value="Marseille">Marseille</option>
+                <option value="Lyon">Lyon</option>
+                <option value="Toulouse">Toulouse</option>
+            </select>
+            <span class="error" id="error-ville"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="abonnement">
+                S'abonner à la newsletter
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </label>
+        </div>
+
+        <button type="submit">Valider</button>
+        <button onclick="eraseForm()" type="button">Effacer</button> <!-- N'hésitez pas à utiliser onclick -->
+    </form>
+
+    <div id="resultat-validation" class="resultat"></div>
+
+    <script src="formulaire-js.js"></script>
+
+    <br>
+    <a href="../index.html">Retour à l'accueil</a>
+    
+</body>
+</html>

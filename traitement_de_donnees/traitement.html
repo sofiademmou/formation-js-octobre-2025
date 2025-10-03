@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/JS_icon.png">
+    <link rel="stylesheet"  href="styles.css"> 
+    <title>Traitement de données</title>
+</head>
+<body>
+    <main>
+        <section id="donnees" class="section">
+            <h2>Traitement des données</h2>
+
+            <!--
+            <div class="concept">
+                <h3>Manipulation des données JSON</h3>
+                <div class="demo-box">
+                    <h4>Données client</h4>
+                    <button onclick="chargerDonnees()">Charger les données</button>
+                    <button onclick="filtrerDonnees()">Filtrer par ville</button>
+                    <button onclick="trierDonnees()">Trier par age</button>
+                    <div id="donnees-clients"></div>
+                </div>
+
+            </div>
+            -->
+
+            <div class="atelier">
+                <h3>Atelier: Gestionnaire de tâches</h3>
+
+                <div class="task-manager">
+                    <div class="task-input">
+                        <input type="text" id="nouvelle-tache" placeholder="Nouvelle tache ...">
+                        <button onclick="ajouterTache()">Ajouter</button>
+                    </div>
+
+                    <div class="task-filter">
+                        <button onclick="filtrerTaches('toutes')">Toutes</button>
+                        <button onclick="filtrerTaches('actives')">Actives</button>
+                        <button onclick="filtrerTaches('terminees')">Terminées</button>
+                    </div>
+
+                    <ul id="liste-taches"></ul>
+                    <div id="stats-taches"></div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="traitement.js"></script>
+</body>
+</html>

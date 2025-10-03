@@ -80,3 +80,45 @@ On déclare les classe avec des . => .important
 Quand on fait CSS externe, on remet tout le style à 0 avant de faire les nouveaux styles (*{})
 rem => dépend de la taille relative du texte
 display : flex => affichage flexible si on est sur téléphone, ordi ...
+
+
+https://github.com/GregMarshall999/formation-html-css-js-octobre-2025
+
+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
+
+
+	*JavaScript:
+existe de puis 1995. Peut y avoir des problèmes de compatibilité => beoisn de passer par émulateur/traducteur
+But = permettre réaction en temps réel aux actions de l'utilisateur
+JS fonctionne sur l'ordi de l'utilisateur => réactivité immédiate (sans rechargement de la page)
+MAIS performance de la page web dépend de la performance de l'ordi utilisé
+Initiation variables:
+- let nom = "Pierre"
+- const age = 25 (ne change pas => read only)
+On peut récupérer des élément d'un fichier html avec l'objet document = DOM (Document Object Model) (document.getElemenyById()) ou controler la fenetre du navigateur window (window.alert())
+
+Gestion d'évènements:
+DOMContentLoaded indique le html est analysé et prêt à être manipulé
+evt souris : click, mouseover ..
+evt clavier : keydown (saisie clavier)
+saisie utilisateur
+
+DOM = représentation de la hierarchie du document html
+- selection : document.querySelector
+- modif : element.innerHTML
+- style : element.style.color
+
+Framework pour simplifier la gestion du code sur nos applications
+
+Formulaires :
+/!\ Empêcher le rafraichissement auto de la page
+focus pour avoir le bleu autour de la cellule sur laquelle on est et passer a la cellule suivante avec tab
+button:active + {transform: translateY(1px);} pour que le bouton se déplace un tout petit peu quand on appuie
+
+
+var et let :
+hoisting = si on redefinit avec var, ca remplace la donnée précédente
+var pour la redéfinition d'une même variable (message d'erreur si on redéfinit avec let)
+
+
+Penser à mettre le type="module" dans <script> pour pouvoir importer des fonctions d'autres fichiers javascript 
